@@ -20,7 +20,4 @@ jobs:
       git_user_name: Chris Turner
       git_user_email: peavers@gmail.com
       use_self_hosted: true
-      # No CurseForge project yet. Set this back to true (and add X-Curse-Project-ID
-      # to the TOC) once it exists.
-      publish_curseforge: false
     secrets: inherit
