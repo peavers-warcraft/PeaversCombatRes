@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PeaversCombatRes
+  description: "A World of Warcraft addon that tracks the group's shared battle res charges and who can use them."
+  annotations:
+    github.com/project-slug: peavers-warcraft/PeaversCombatRes
+spec:
+  type: library
+  lifecycle: production
+  owner: peavers-warcraft

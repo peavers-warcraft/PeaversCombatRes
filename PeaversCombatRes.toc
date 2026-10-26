@@ -1,0 +1,33 @@
+## Interface: 120001, 120005, 120007, 120100, 120105
+
+## Title: |cff3abdf7Peavers|rCombatRes
+## Notes: Tracks the group's shared battle res charges and who can use them
+## Author: Peavers
+## Version: 1.0.0
+
+## IconTexture: Interface\AddOns\PeaversCommons\src\Media\Icon.tga
+## Category-enUS: Peavers
+
+## X-Website: https://peavers.io
+## X-Source-Code: https://github.com/peavers-warcraft/PeaversCombatRes
+
+## Dependencies: PeaversCommons, PeaversConfig
+## SavedVariables: PeaversCombatResDB
+
+Changelog.lua
+
+src\Main.lua
+
+src\Data\Spells.lua
+
+src\Utils\Config.lua
+src\Utils\ConfigUI.lua
+src\Utils\EditMode.lua
+
+src\Core\Pool.lua
+src\Core\Roster.lua
+src\Core\Probe.lua
+
+src\UI\ResBar.lua
+
+src\Core\Core.lua
