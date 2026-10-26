@@ -10,6 +10,7 @@
 
 ## X-Website: https://peavers.io
 ## X-Source-Code: https://github.com/peavers-warcraft/PeaversCombatRes
+## X-Curse-Project-ID: 1767468
 
 ## Dependencies: PeaversCommons, PeaversConfig
 ## SavedVariables: PeaversCombatResDB
