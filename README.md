@@ -16,6 +16,28 @@ driving the real `Core` ticker. If any number goes outside `perf/budget.json`,
 the build fails.
 
 <!-- perf:begin -->
+
+> Measured on every push by the Ultra Performance harness. The build fails if any number here exceeds the budget in `perf/budget.json`.
+
+| Check | Measured | Budget | |
+|---|---:|---:|:--:|
+| Packaged size | 43.8 KB | 60 KB | pass |
+| Bundled libraries | 0 | 0 | pass |
+| Widget calls per frame | 0 | 0 | pass |
+| Widget calls per second while idle | 0 | 0 | pass |
+| Widget calls per second | 1.17 | 5 | pass |
+
+Scenarios driven against the real addon source, outside the game:
+
+| Scenario | Calls/frame | Calls/sec | Notes |
+|---|---:|---:|---|
+| key, next charge recharging, 1s ticker | 0.00 | 1.2 | 300 ticks driven; bar fill and timer text |
+| key, pool at its cap | 0.00 | 0.0 | every draw is diffed; nothing moved |
+| no pool (open world, between pulls) | 0.00 | - | hidden, no ticker exists |
+| 100 SPELL_UPDATE_CHARGES, pool unchanged | 0.00 | - | 0.00 widget calls per event |
+
+<sub>1,333 lines of Lua · 43.8 KB packaged · no bundled libraries</sub>
+
 <!-- perf:end -->
 
 ## Features
